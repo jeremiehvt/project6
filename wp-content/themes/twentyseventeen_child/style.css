@@ -1,0 +1,135 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Theme URI:    http://example.com/twenty-seventeen-child/
+ Description:  Twenty Seventeen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-seventeen-child
+*/
+
+.site-branding {
+	display: none;
+}
+
+body.page-two-column:not(.archive) #primary .entry-header {
+    float: none;
+    width: auto;
+}
+
+body.page-two-column:not(.archive) #primary .entry-content {
+    float: left;
+    width: 100%;
+}
+
+.customcontent {
+    width: 70%;
+}
+
+.entry-title a {
+    color: #f95858;
+}
+
+.entry-title a:hover {
+    
+    color: #30323F;
+    box-shadow: none;
+	-webkit-box-shadow:none;
+}
+
+
+.custom-logo-link img {
+    
+    max-height: 400px;
+    width: auto;
+}
+
+.navigation-top {
+	background: #e8444d;
+	border-top:none;
+}
+
+.navigation-top a {
+	color: #ffffff;
+}
+
+.navigation-top a:hover {
+	color: #193456;
+}
+
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+    color: #cccccc;
+}
+
+h2.widget-title {
+	color: red;
+	font-size:1em;
+}
+
+a#connexion {
+	color: white;
+	text-decoration: none;
+
+}
+
+.widget ul li a, .site-footer .widget-area ul li a, .site-footer .widget-area ul li a {
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+
+.widget a, .site-footer .widget-area a {
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+
+.widget_text ul {
+	list-style: none;
+	margin:0;
+}
+
+.site-footer {
+	background-color: #193456;
+	margin-top: 10em;
+}
+
+.site-info a {
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+
+.site-info {
+    display: none;
+}
+
+/* champ de recherche d'évenement*/
+div.css-search {
+	display: none;
+}
+
+@media screen and (min-width: 48em){
+
+	
+
+
+	.custom-logo-link img {
+    
+    max-width: 800px;
+
+    }
+
+    .site-header .navigation-top .menu-scroll-down {
+    color: #ffffff;
+    
+    }
+
+    h2.widget-title {
+	color:#193456;
+	font-size:1em;
+    }
+
+    
+}

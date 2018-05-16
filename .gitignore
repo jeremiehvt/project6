@@ -1,0 +1,4 @@
+#exclude config files
+/wp-config.php
+/wp-config-sample.php
+
