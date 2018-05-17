@@ -1,8 +1,25 @@
 <?php
-function displayHello() {
-echo "<p id=\"content\">bonjour</p>";
+#add CSS and Javascript Link---
+#
+#
+#
+#
+function bootstrap_enqueue_style(){
+    wp_enqueue_style('bootstrap_css','https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 }
 
+function bootstrap_enqueue_scripts(){
+    wp_enqueue_style('bootstrap_js','https://code.jquery.com/jquery-3.2.1.slim.min.js');
+    wp_enqueue_style('bootstrap_js','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js');
+     wp_enqueue_style('bootstrap_js','https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js');
+}
+
+add_action( 'wp_enqueue_scripts', 'bootstrap_enqueue_style' );
+add_action( 'wp_enqueue_scripts', 'bootstrap_enqueue_scripts' );
+#
+#
+#
+#end CSS and JS integration---
 
 add_action('widgets_init','zero_add_sidebar');
 function zero_add_sidebar()

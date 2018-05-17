@@ -1,3 +1,21 @@
 <?php
+/**
+ * Template Name: home page
+ *
+ * @package WordPress
+ * @subpackage axcesstheme
+ * @since axcesstheme 1.0
+ */
 
-echo "la liste des dernier articles";
+get_header();
+
+	if (is_page()) { ?>
+		
+		<h2><?php the_title();?></h2> 
+		<p><?php the_content();?></p>
+		
+			
+	<?php
+	}
+
+get_footer();
