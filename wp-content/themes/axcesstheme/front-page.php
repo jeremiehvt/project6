@@ -8,7 +8,7 @@
 
 		<h2><a href="<?php the_permalink();?>" rel="bookmark"><?php the_title();?></a></h2>
 		
-
+		<div><?php the_post_thumbnail('medium')?></div>
 		<?php the_excerpt();?>
 		<?php the_author();?>
 		<?php the_date();?>

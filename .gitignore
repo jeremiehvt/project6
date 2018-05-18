@@ -1,4 +1,4 @@
 #exclude config files
 /wp-config.php
 /wp-config-sample.php
-
+/wp-content/themes/axcesstheme/wp-bootstrap-navwalker/
