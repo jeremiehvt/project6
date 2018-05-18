@@ -3,9 +3,9 @@
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
 		<ul class="list-unstyled">
-			<li><a href="">administration</a></li>
+			<li><a href="<?php echo wp_login_url(home_url())?>">administration</a></li>
 		</ul>
-		<p>site rélisé par ©jeremiehvart<a href="mailto:jeremiehvt@gmail.com">jeremiehvt</a></p>
+		<p>site réalisé par ©jeremiehvart | <a href="mailto:jeremiehvt@gmail.com">jeremiehvt@gmail.com</a></p>
 	</div>
 	
 </div>
