@@ -9,12 +9,11 @@
     </head>
 
     <body>
-
-    	<header>
+    	<header class="col-12 px-0 mx-0">
     		<?php if ( get_header_image() ) : ?>
-			    <div id="site-header">
+			    <div class="col-12 px-0" id="site-header">
 			        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-			            <img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+			            <img src="<?php header_image(); ?>" width="100%" height="100%" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 			        </a>
 			    </div>
 			<?php endif; ?>
@@ -24,7 +23,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<?php $custom_logo_id = get_theme_mod( 'custom_logo' );
 					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 					if ( has_custom_logo() ) {
@@ -44,9 +43,7 @@
 						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 						'walker'            => new WP_Bootstrap_Navwalker(),
 					) );
-					?>
-
-					
+					?>					
 				</div>
 			</nav>
     	</header>
