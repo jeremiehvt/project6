@@ -8,11 +8,8 @@
 function axcess_enqueue_scripts(){
     
     wp_enqueue_style('bootstrap','//stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',[],'4.1.0');
-
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.2.1.slim.min.js', [], '3.2.1', true);
-
     wp_enqueue_script('bootstrap_jquery', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', [], '4.0.0', true);
-
     wp_enqueue_script('popper', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', [], '1.12.3', 
         true);
 }
@@ -37,7 +34,6 @@ function register_main_menu() {
         )
     );
 }
-
 add_action('init', 'register_main_menu');
 
 /*
@@ -108,3 +104,20 @@ function axcesstheme_custom_logo_setup() {
     add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'axcesstheme_custom_logo_setup' );
+
+
+/**
+ * register sidebar
+ */
+add_action('widgets_init', 'theme_slug_widgets_init');
+function theme_slug_widgets_init() {
+    register_sidebar( array(
+                          'name' => __( 'Main Sidebar', 'theme-slug' ),
+                          'id' => 'sidebar-1',
+                          'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+                          'before_widget' => '<li id="%1$s" class="widget %2$s">',
+                          'after_widget'  => '</li>',
+                          'before_title'  => '<h2 class="widgettitle">',
+                          'after_title'   => '</h2>',
+                      ) );
+}
