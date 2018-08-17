@@ -12,6 +12,7 @@
                             <div class="col-12">
                                 <h2>Bonjour</h2>
                                 <p>Voici la dernière actualité de Axcesshandisports</p>
+                                <?php get_sidebar('main'); ?>
                             </div>
                             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

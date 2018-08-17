@@ -109,12 +109,22 @@ add_action( 'after_setup_theme', 'axcesstheme_custom_logo_setup' );
 /**
  * register sidebar
  */
-add_action('widgets_init', 'theme_slug_widgets_init');
-function theme_slug_widgets_init() {
+add_action('widgets_init', 'axcesstheme_widgets_init');
+function axcesstheme_widgets_init() {
     register_sidebar( array(
-                          'name' => __( 'Main Sidebar', 'theme-slug' ),
-                          'id' => 'sidebar-1',
-                          'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+                          'name' => __( 'Main Sidebar', 'axcesstheme' ),
+                          'id' => 'main',
+                          'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'axcesstheme' ),
+                          'before_widget' => '<li id="%1$s" class="widget %2$s">',
+                          'after_widget'  => '</li>',
+                          'before_title'  => '<h2 class="widgettitle">',
+                          'after_title'   => '</h2>',
+                      ) );
+
+    register_sidebar( array(
+                          'name' => __( 'footer bar', 'axcesstheme' ),
+                          'id' => 'footer-bar',
+                          'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'axcesstheme' ),
                           'before_widget' => '<li id="%1$s" class="widget %2$s">',
                           'after_widget'  => '</li>',
                           'before_title'  => '<h2 class="widgettitle">',

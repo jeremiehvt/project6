@@ -105,7 +105,7 @@ function get_sidebar( $name = null ) {
 	if ( '' !== $name )
 		$templates[] = "sidebar-{$name}.php";
 
-	$templates[] = 'sidebar.php';
+	$templates[] = 'sidebar-main.php';
 
 	locate_template( $templates, true );
 }
