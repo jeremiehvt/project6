@@ -115,19 +115,9 @@ function axcesstheme_widgets_init() {
                           'name' => __( 'Main Sidebar', 'axcesstheme' ),
                           'id' => 'main',
                           'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'axcesstheme' ),
-                          'before_widget' => '<li id="%1$s" class="widget %2$s">',
-                          'after_widget'  => '</li>',
-                          'before_title'  => '<h2 class="widgettitle">',
-                          'after_title'   => '</h2>',
-                      ) );
-
-    register_sidebar( array(
-                          'name' => __( 'footer bar', 'axcesstheme' ),
-                          'id' => 'footer-bar',
-                          'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'axcesstheme' ),
-                          'before_widget' => '<li id="%1$s" class="widget %2$s">',
-                          'after_widget'  => '</li>',
-                          'before_title'  => '<h2 class="widgettitle">',
-                          'after_title'   => '</h2>',
+                          'before_widget' => '<li id="%1$s" class="widget %2$s"><aside class="widget_%1$s_aside">',
+                          'after_widget'  => '</aside></li>',
+                          'before_title'  => '<h5 class="widgettitle my-3">',
+                          'after_title'   => '</h5>',
                       ) );
 }

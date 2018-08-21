@@ -1,0 +1,22 @@
+/*
+CSS Name: Default Styles
+Description: NextGEN Default Gallery Stylesheet
+Author: Imagely
+Version: 2.13
+
+This stylesheet is provided to allow users the ability of overriding the default styles for all display types
+*/
+
+.ngg-gallery-thumbnail {
+    text-align: center;
+    max-width: 100%!important;
+border:none;
+    margin-right: 2px;
+    margin: 3px;
+}
+
+.ngg-gallery-thumbnail a {
+   
+    margin: 0;
+   
+}

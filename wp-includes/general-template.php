@@ -105,7 +105,7 @@ function get_sidebar( $name = null ) {
 	if ( '' !== $name )
 		$templates[] = "sidebar-{$name}.php";
 
-	$templates[] = 'sidebar-main.php';
+	$templates[] = 'sidebar.php';
 
 	locate_template( $templates, true );
 }
@@ -2885,7 +2885,7 @@ function wp_resource_hints() {
 	 * The path is removed in the foreach loop below.
 	 */
 	/** This filter is documented in wp-includes/formatting.php */
-	$hints['dns-prefetch'][] = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/2.4/svg/' );
+	$hints['dns-prefetch'][] = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/11/svg/' );
 
 	foreach ( $hints as $relation_type => $urls ) {
 		$unique_urls = array();
