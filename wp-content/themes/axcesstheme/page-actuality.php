@@ -12,8 +12,14 @@ if (is_page()) {
     if (have_posts()) : while (have_posts()) : the_post();?>
         <div class="container-fluid">
             <div class="row">
-                <section class="col-12 col-md-9">
-                    <p><a href=" <?= the_permalink();?>"><?php the_title();?></a></p>
+                <section class="col-12 col-md-9 my-5">
+                    <nav aria-label="breadcrumb" class="mt-2">
+                        <ol class="breadcrumb">
+                            <li class="bwg-breadcrumb-item-active">
+                                <a href=" <?php the_permalink();?>"><?php the_title();?></a>
+                            </li>
+                        </ol>
+                    </nav>
                     <?php the_content();?>
 
                     <div class="row">
@@ -31,6 +37,8 @@ if (is_page()) {
 
                             <article class="col-12 col-md-4 my-3">
                                 <div class="card">
+                                    <img src="<?php if (has_post_thumbnail()) :
+                                        the_post_thumbnail_url('medium'); endif ?>"/>
                                     <div class="card-body">
                                         <h4 class="card-txt">
                                             <a href="<?php the_permalink();?>"
@@ -60,7 +68,7 @@ if (is_page()) {
                         ?>
                     </div>
                 </section>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 my-5">
                     <?php get_sidebar('main'); ?>
                 </div>
             </div>

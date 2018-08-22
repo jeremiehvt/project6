@@ -12,8 +12,10 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                                        <div class="col-12 col-md-4 my-3">
+                                        <article class="col-12 col-md-4 my-3">
                                             <div class="card">
+                                                <img src="<?php if (has_post_thumbnail()) :
+                                                    the_post_thumbnail_url('medium'); endif ?>"/>
                                                 <div class="card-body">
                                                     <h4 class="card-txt">
                                                         <a href="<?php the_permalink();?>"
@@ -36,7 +38,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </article>
                                     <?php endwhile; else : ?>
                                         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
                                     <?php endif; ?>

@@ -17,8 +17,14 @@ get_header(); ?>
                     <div class="container-fluid">
                         <div class="row">
                             <section class="col-12 col-md-9">
-                                <h2><?php the_title();?></h2>
-                                <p><?php the_content();?></p>
+                                <nav aria-label="breadcrumb" class="mt-3">
+                                    <ol class="breadcrumb">
+                                        <li class="bwg-breadcrumb-item-active">
+                                            <a href=" <?= the_permalink();?>"><?php the_title();?></a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <?php the_content();?>
                             </section>
                             <div class="col-12 col-md-3">
                                 <?php get_sidebar('main'); ?>
