@@ -17,6 +17,6 @@ img {
     max-width: 100%;
 }
 
-.card > .a2a_kit {
+article > div.a2a_kit {
     position: absolute;
 }
