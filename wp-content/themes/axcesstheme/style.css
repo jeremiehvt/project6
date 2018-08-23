@@ -20,3 +20,24 @@ img {
 article > div.a2a_kit {
     position: absolute;
 }
+
+img.logo-axcessh {
+    width: 85%;
+}
+
+nav#nav-axcessh {
+    background: #e8444d;
+}
+
+div#bs-example-navbar-collapse-1 {
+    margin-top: 1em;
+}
+
+
+a.nav-link {
+    color: white!important;
+}
+
+a.nav-link:hover {
+    color: #193456!important;
+}
