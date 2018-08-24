@@ -8,9 +8,6 @@
  */
 
 get_header(); ?>
-
-
-
         <?php
             if (is_page()) {
                 if (have_posts()) : while (have_posts()) : the_post();?>
@@ -20,7 +17,10 @@ get_header(); ?>
                                 <nav aria-label="breadcrumb" class="mt-3">
                                     <ol class="breadcrumb">
                                         <li class="bwg-breadcrumb-item-active">
-                                            <a href=" <?= the_permalink();?>"><?php the_title();?></a>
+                                            <a href="/">Home</a> / <a href=" <?= the_permalink();
+                                            ?>"><?php
+                                                the_title();
+                                           ?></a>
                                         </li>
                                     </ol>
                                 </nav>
@@ -36,8 +36,4 @@ get_header(); ?>
                     <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
                 <?php endif;
             }
-        ?>
-
-<?php
-		
 get_footer();
