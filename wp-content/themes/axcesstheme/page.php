@@ -17,7 +17,7 @@ get_header(); ?>
                                 <nav aria-label="breadcrumb" class="mt-3">
                                     <ol class="breadcrumb">
                                         <li class="bwg-breadcrumb-item-active">
-                                            <a href="/">Home</a> / <a href=" <?= the_permalink();
+                                            <a href="/">Accueil</a> / <a href=" <?= the_permalink();
                                             ?>"><?php
                                                 the_title();
                                            ?></a>

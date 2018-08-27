@@ -6,7 +6,7 @@ get_header(); ?>
        <nav aria-label="breadcrumb" class="col-12 mt-4">
            <ol class="breadcrumb">
                <li class="bwg-breadcrumb-item-active">
-                   <a href="/">Home</a> /
+                   <a href="/">Accueil</a> /
                    <?php the_category(' ');?> /
                    <a href=" <?php the_permalink(); ?>">
                        <?php the_title();?></a>

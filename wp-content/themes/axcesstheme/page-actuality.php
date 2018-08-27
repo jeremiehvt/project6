@@ -16,7 +16,8 @@ if (is_page()) {
                     <nav aria-label="breadcrumb" class="mt-2">
                         <ol class="breadcrumb">
                             <li class="bwg-breadcrumb-item-active">
-                                <a href=" <?php the_permalink();?>"><?php the_title();?></a>
+                                <a href="/">Accueil</a> / <a href=" <?php the_permalink();?>"><?php
+                                    the_title();?></a>
                             </li>
                         </ol>
                     </nav>
