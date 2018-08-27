@@ -7,5 +7,7 @@
  */
 
 if ( is_active_sidebar('footer') && is_dynamic_sidebar()) {
-    dynamic_sidebar('footer');
-}
+
+     dynamic_sidebar('footer');
+
+ }

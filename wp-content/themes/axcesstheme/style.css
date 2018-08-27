@@ -13,6 +13,23 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+p {
+    color: #4b4b4c;
+}
+
+.jumbotron p {
+    padding: 1em 2em 0 2em;
+}
+
+.jumbotron h1 , .jumbotron h2 , .jumbotron h3,.jumbotron h4,.jumbotron h5.jumbotron h6 {
+    padding: .7em .7em 0 .7em;
+}
+
+.jumbotron hr {
+    background: #193456;
+    margin: 2em;
+}
+
 img {
     max-width: 100%;
 }
@@ -40,4 +57,230 @@ a.nav-link {
 
 a.nav-link:hover {
     color: #193456!important;
+}
+
+
+
+
+/* breadcrumb*/
+
+.breadcrumb {
+    border-radius: 0;
+    /*background: #193456;*/
+    background: #193456;
+    padding: .4em;
+    padding-left: 1em;
+    margin-bottom: 0!important;
+}
+
+.breadcrumb > li > a {
+    color: white;
+    font-size: .8em;
+    font-weight: bolder;
+}
+
+.breadcrumb > li > a:hover {
+    color: #e8444d;
+    text-decoration: none;
+
+}
+
+/* page */
+.page-content {
+    border-radius: unset;
+    background: #FAFAFA;
+    color: white;
+    padding:0;
+
+}
+
+.page-content h1 {
+    font-size: 3.5em;
+    color:#193456;
+}
+
+.page-content a {
+    font-weight: bolder;
+    color :#193456;
+}
+
+.page-content a:hover {
+    color: #e8444d;
+    text-decoration: none;
+}
+
+.page-content .addtoany_content {
+   text-align: center;
+    background: #193456;
+    padding-top: .8em;
+    padding-bottom: .8em;
+}
+
+.page-content img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* homepage */
+
+h2#homepage-actuality-title {
+    background: #e8444d;
+    font-size: 1.6em !important;
+    text-align: center;
+    padding: .8em .4em;
+    color: white;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    -webkit-box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.31);
+}
+
+.actuality {
+
+    padding-top: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* card */
+
+article .card {
+    border: none;
+    -webkit-box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.31);
+    box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.31);
+}
+
+.card-category {
+    margin-bottom: .5em;
+}
+
+.badge {
+    background: #e8444d!important;
+}
+
+.category-span a {
+    color: white;
+    font-size: .8em;
+    text-decoration: none;
+}
+
+.category-span a:hover {
+    color: #193456;
+}
+
+.label-category-span {
+    font-size: .8em;
+}
+
+.card h4 a{
+    color: #193456;
+}
+.card h4 a:hover{
+    color: #e8444d;
+    text-decoration: none;
+}
+
+#read-more {
+    border: none;
+    font-weight: bolder;
+    width: 100%;
+    background: #e8444d;
+}
+
+#read-more:hover {
+    background: #193456;
+}
+
+ul.list-group li {
+    background: #193456;
+    color: white;
+}
+
+/* sidebar */
+
+.main-sidebar aside {
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border-radius: 0 0 .2em .2em;
+    -webkit-box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+    box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+}
+
+h5.widgettitle {
+    background: #193456;
+    color: white;
+    font-size: 1em;
+    padding: .4em;
+    padding-left: .8em;
+    margin-right: 6em;
+
+}
+
+aside ul {
+    margin: unset;
+    padding-left: 1.5em;
+}
+
+aside ul li {
+    list-style: none;
+}
+
+aside ul li a {
+   color: #193456;
+    font-weight: bolder;
+}
+
+aside ul li a:hover {
+    color: #e8444d;
+    text-decoration: none;
+}
+
+aside .a2a_kit {
+    padding-left: 1.4em;
+}
+
+
+/* footer*/
+#footer {
+    color: white;
+    margin-bottom: 0;
+    margin-top: 7em;
+    background: #1934566e;
+    padding-bottom: 0!important;
+}
+
+#footer .widgettitle, h6 {
+    color: #193456;
+}
+
+#footer a {
+    color: #193456;
+    font-weight: lighter;
+}
+
+#footer a:hover {
+    color: #e8444d;
+    text-decoration: none;
+}
+
+#footer ul {
+    padding: 0;
+}
+#footer ul li {
+   color:#193456;
+    font-weight: lighter;
+}
+
+#footer p {
+    color: white;
+    background: #193456;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#footer p a{
+    color: white;
 }

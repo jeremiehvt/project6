@@ -7,6 +7,12 @@ Version: 2.13
 This stylesheet is provided to allow users the ability of overriding the default styles for all display types
 */
 
+.ngg-galleryoverview {
+    display: flex!important;
+    justify-content: center;
+    margin-bottom:3em;
+}
+
 .ngg-gallery-thumbnail {
     text-align: center;
     max-width: 100%!important;
