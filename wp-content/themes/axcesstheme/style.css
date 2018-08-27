@@ -150,6 +150,10 @@ article .card {
     box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.31);
 }
 
+.card-body p {
+    font-size: .9em;
+}
+
 .card-category {
     margin-bottom: .5em;
 }
