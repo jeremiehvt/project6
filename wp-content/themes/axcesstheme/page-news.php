@@ -26,7 +26,7 @@ if (is_front_page()) {
                     </div>
 
                     <h2 id="homepage-actuality-title"> <?= get_page_by_title('actualités')
-                            ->post_content; ?></h2>
+                            ->post_title; ?></h2>
                     <div class="actuality">
                     <div class="row">
                         
