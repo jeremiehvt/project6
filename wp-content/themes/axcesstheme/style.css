@@ -67,6 +67,7 @@ a.nav-link:hover {
 .breadcrumb {
     border-radius: 0;
     /*background: #193456;*/
+    color: white;
     background: #193456;
     padding: .4em;
     padding-left: 1em;
@@ -85,7 +86,7 @@ a.nav-link:hover {
 
 }
 
-/* page */
+/* homepage */
 .page-content {
     border-radius: unset;
     background: #FAFAFA;
@@ -94,7 +95,7 @@ a.nav-link:hover {
 
 }
 
-.page-content h1 {
+.page-content h1 ,.page-content h2 ,.page-content h3 ,.page-content h4 ,.page-content h5 ,.page-content h6 {
     font-size: 3.5em;
     color:#193456;
 }
@@ -120,8 +121,6 @@ a.nav-link:hover {
     max-width: 100%;
     height: 100%;
 }
-
-/* homepage */
 
 h2#homepage-actuality-title {
     background: #e8444d;
@@ -198,6 +197,41 @@ article .card {
 ul.list-group li {
     background: #193456;
     color: white;
+}
+
+/* current page */
+.current-page {
+    background: #193456;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5em;
+}
+
+.current-page .corpus {
+    padding-bottom: 2em;
+}
+
+.current-page  h3, .current-page  h2, .current-page  h1, .current-page  h4, .current-page  h5, .current-page  h6 {
+    color: white;
+    padding: 0;
+    padding-left: 0.5em;
+    margin: 0;
+    font-size: 2.5rem;
+    margin-top: 1.2em;
+}
+
+.current-page  p {
+    color: white;
+    padding: 0;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.current-page img {
+    max-width: 100%;
+    height: 100%;
 }
 
 /* sidebar */

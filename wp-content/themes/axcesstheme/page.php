@@ -13,7 +13,7 @@ get_header(); ?>
                 if (have_posts()) : while (have_posts()) : the_post();?>
                     <div class="container-fluid">
                         <div class="row">
-                            <section class="col-12 col-md-9">
+                            <section class="col-12 col-md-8 offset-md-1 my-5">
                                 <nav aria-label="breadcrumb" class="mt-3">
                                     <ol class="breadcrumb">
                                         <li class="bwg-breadcrumb-item-active">
@@ -24,9 +24,14 @@ get_header(); ?>
                                         </li>
                                     </ol>
                                 </nav>
-                                <?php the_content();?>
+                                <div class="jumbotron current-page">
+                                    <?php the_post_thumbnail('full');?>
+                                    <div class="corpus">
+                                        <?php the_content();?>
+                                    </div>
+                                </div>
                             </section>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-3 my-5">
                                 <?php get_sidebar('main'); ?>
                             </div>
                         </div>

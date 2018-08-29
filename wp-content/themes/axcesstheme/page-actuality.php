@@ -12,7 +12,7 @@ if (is_page()) {
     if (have_posts()) : while (have_posts()) : the_post();?>
         <div class="container-fluid">
             <div class="row">
-                <section class="col-12 col-md-9 my-5">
+                <section class="col-12 col-md-8 offset-md-1 my-5">
                     <nav aria-label="breadcrumb" class="mt-2">
                         <ol class="breadcrumb">
                             <li class="bwg-breadcrumb-item-active">
@@ -21,7 +21,13 @@ if (is_page()) {
                             </li>
                         </ol>
                     </nav>
-                    <?php the_content();?>
+
+                    <div class="jumbotron current-page">
+                        <?php the_post_thumbnail('full');?>
+                        <div class="corpus">
+                            <?php the_content();?>
+                        </div>
+                    </div>
 
                     <div class="row">
 
@@ -41,22 +47,33 @@ if (is_page()) {
                                     <img src="<?php if (has_post_thumbnail()) :
                                         the_post_thumbnail_url('medium'); endif ?>"/>
                                     <div class="card-body">
+                                        <div class="card-category">
+                                            <span class="label-category-span">categorie :
+                                            </span>
+                                            <span class="category-span badge
+                                                badge-light"><?php
+                                                the_category( ' ')
+                                                ?></span>
+                                        </div>
                                         <h4 class="card-txt">
                                             <a href="<?php the_permalink();?>"
                                                rel="bookmark"><?php the_title();?>
-                                            </a>
+
+                                            </a><br>
                                         </h4>
                                         <p class="card-txt"><?php the_excerpt();?></p>
                                         <p class="card-txt">
-                                            <a href="<?php the_permalink();?>">lire</a>
+                                            <a id="read-more" class="btn btn-primary" href="<?php
+                                            the_permalink();
+                                            ?>">lire l'article</a>
                                         </p>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">par :
+                                        <li class="list-group-item">auteur :
                                             <span class="font-italic">
                                                 <?php the_author();?>
                                             </span>
-                                            <span class="float-right">le
+                                            <span class="float-right font-italic">le
                                                 <?= get_the_date(); ?>
                                             </span>
                                         </li>

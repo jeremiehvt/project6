@@ -8,7 +8,7 @@
                     <div class="row">
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <div class="col-12 col-md-4 my-3">
-                                <div class="card">
+                                <article class="card">
                                     <div class="card-body">
                                         <h4 class="card-txt">
                                             <a href="<?php the_permalink();?>"
@@ -30,7 +30,7 @@
                                         </span>
                                         </li>
                                     </ul>
-                                </div>
+                                </article>
                             </div>
                         <?php endwhile; else : ?>
                             <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
