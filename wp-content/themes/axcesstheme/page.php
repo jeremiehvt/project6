@@ -31,7 +31,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                             </section>
-                            <div class="col-12 col-md-3 my-5">
+                            <div class="col-12 col-md-2 my-5">
                                 <?php get_sidebar('main'); ?>
                             </div>
                         </div>

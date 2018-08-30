@@ -34,7 +34,7 @@ if (is_front_page()) {
 
                         global $post;
                         $args = array(
-                            'posts_per_page' => 10,
+                            'posts_per_page' => 5,
                             'category' => 0,
                             'category_name' => 'actualites'
                         );
@@ -88,7 +88,7 @@ if (is_front_page()) {
                     </div>
                     </div>
                 </section>
-                <div class="col-12 col-md-3 my-5">
+                <div class="col-12 col-md-2 my-5">
                     <?php get_sidebar('main'); ?>
                 </div>
             </div>

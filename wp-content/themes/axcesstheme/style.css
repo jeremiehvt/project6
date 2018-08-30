@@ -95,6 +95,8 @@ a.nav-link:hover {
     border-radius: 0 0 .4em .4em;
     color: white;
     padding:0;
+    -webkit-box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+    box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
 
 }
 
@@ -214,6 +216,8 @@ ul.list-group li {
     padding: 0;
     margin: 0;
     margin-bottom: 5em;
+    -webkit-box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+    box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
 }
 
 .current-page .corpus {
@@ -243,6 +247,57 @@ ul.list-group li {
     height: 100%;
 }
 
+/* contact page */
+
+div#contact-infos {
+    margin-left: 0 !important;
+}
+
+div#contact-infos ul {
+    margin-left: 0!important;
+    padding-left: 0!important;
+}
+
+div#contact-infos ul li a {
+    color: #193456;
+    text-decoration: none;
+}
+
+div#contact-infos ul li a:hover {
+    color: #e8444d;
+}
+
+div#contact-infos ul:first-child {
+    border-right: 1px solid #193456;
+    margin-right: 2em;
+
+}
+
+.contact-corpus {
+    margin: 0;
+}
+
+input, textarea {
+    border-radius: 1em !important;
+    border: 1px solid #193456 !important;
+}
+
+textarea {
+    border: 1px solid #193456 !important;
+    border-radius: .4em !important;
+    margin-top: 2em !important;
+}
+
+.btn {
+    border: none !important;
+    color:white !important;
+    background: #193456 !important;
+}
+
+.btn:hover {
+    background: #e8444d !important;
+}
+
 /* sidebar */
 
 .main-sidebar aside {
@@ -259,21 +314,34 @@ h5.widgettitle {
     font-size: 1em;
     padding: .4em;
     padding-left: .8em;
-    margin-right: 6em;
 
 }
 
 aside ul {
     margin: unset;
-    padding-left: 1.5em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.widget_recent_entries aside ul li {
+    border-left: 6px solid #193456;
+    padding-left: .5em;
+    margin-top: .6em;
 }
 
 aside ul li {
+    padding-right: .4em;
     list-style: none;
 }
 
+aside ul li:hover {
+    background: #FAFAFA;
+
+    border-left-color: #e8444d;
+}
+
 aside ul li a {
-   color: #193456;
+    color: #193456;
     font-weight: bolder;
 }
 
@@ -284,6 +352,9 @@ aside ul li a:hover {
 
 aside .a2a_kit {
     padding-left: 1.4em;
+    padding-right: 1.4em;
+    display: flex;
+    justify-content: flex-start;
 }
 
 
