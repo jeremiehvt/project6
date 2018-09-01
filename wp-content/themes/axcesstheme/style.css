@@ -149,7 +149,6 @@ h2#homepage-actuality-title {
 }
 
 /* card */
-
 article .card {
     border: none;
     -webkit-box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.31);
@@ -247,8 +246,25 @@ ul.list-group li {
     height: 100%;
 }
 
-/* contact page */
+/* category */
+.category-description {
+    background: #FAFAFA;
+    border: 1px solid #193456;
+    -webkit-border-radius: 0 0 .3em .3em;
+    -moz-border-radius: 0 0 .3em .3em;
+    border-radius: 0 0 .3em .3em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2em;
+    -webkit-box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+    box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+}
 
+.category-description-title {
+    margin: 1em;
+}
+
+/* contact page */
 div#contact-infos {
     margin-left: 0 !important;
 }
@@ -385,7 +401,6 @@ textarea {
 
 
 /* sidebar */
-
 .main-sidebar aside {
     margin-top: 2em;
     padding-bottom: 1em;

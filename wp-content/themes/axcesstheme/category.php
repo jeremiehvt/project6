@@ -9,7 +9,7 @@
 get_header(); ?>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-9 my-5">
+        <div class="col-12 col-md-8 offset-md-1 my-5">
             <div class="container-fluid">
                 <div class="row">
                     <nav aria-label="breadcrumb" class="col-12 mt-4">
@@ -20,7 +20,11 @@ get_header(); ?>
                                 ?> /
                             </li>
                         </ol>
-                        <h3><?= category_description();?></h3>
+                        <div class="category-description">
+                            <h3 class="category-description-title"><?= category_description();
+                            ?></h3>
+                        </div>
+
                     </nav>
                     <?php if (is_category()) : while (have_posts()) : the_post(); ?>
                         <article class="col-12 col-md-4 my-3">
