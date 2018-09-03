@@ -38,9 +38,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-2 my-5 pt-3">
+            <aside class="col-12 col-md-2">
                 <?php get_sidebar('main'); ?>
-            </div>
+            </aside>
         </div>
     </div>
 

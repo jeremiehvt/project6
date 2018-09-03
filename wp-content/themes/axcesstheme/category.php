@@ -9,22 +9,21 @@
 get_header(); ?>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-8 offset-md-1 my-5">
+        <div class="col-12 col-md-8 offset-md-1 my-4">
             <div class="container-fluid">
                 <div class="row">
-                    <nav aria-label="breadcrumb" class="col-12 mt-4">
+                    <nav aria-label="breadcrumb" class="col-12">
                         <ol class="breadcrumb">
                             <li class="bwg-breadcrumb-item-active">
                                 <a href="/">Accueil</a> /
                                 <?php the_category(' ');
-                                ?> /
+                                ?>
                             </li>
                         </ol>
                         <div class="category-description">
                             <h3 class="category-description-title"><?= category_description();
                             ?></h3>
                         </div>
-
                     </nav>
                     <?php if (is_category()) : while (have_posts()) : the_post(); ?>
                         <article class="col-12 col-md-4 my-3">
@@ -67,13 +66,18 @@ get_header(); ?>
                         </article>
                      <?php endwhile; else : ?>
                         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-                    <?php endif; ?>
+                    <?php endif;?>
+                    <div class="col-12 general-pagination mt-5">
+                        <?php the_posts_pagination(); ?>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-        <div class="col-12 col-md-2 my-5 pt-3">
+        <aside class="col-12 col-md-2">
             <?php get_sidebar('main'); ?>
-        </div>
+        </aside>
     </div>
 </div>
 <?php get_footer();

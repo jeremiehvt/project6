@@ -13,8 +13,8 @@ get_header(); ?>
                 if (have_posts()) : while (have_posts()) : the_post();?>
                     <div class="container-fluid">
                         <div class="row">
-                            <section class="col-12 col-md-8 offset-md-1 my-5">
-                                <nav aria-label="breadcrumb" class="mt-3">
+                            <section class="col-12 col-md-8 offset-md-1 my-md-4">
+                                <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="bwg-breadcrumb-item-active">
                                             <a href="/">Accueil</a> / <a href=" <?= the_permalink();
@@ -31,7 +31,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                             </section>
-                            <div class="col-12 col-md-2 my-5">
+                            <div class="col-12 col-md-2">
                                 <?php get_sidebar('main'); ?>
                             </div>
                         </div>

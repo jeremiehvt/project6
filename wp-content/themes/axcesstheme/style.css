@@ -353,12 +353,12 @@ textarea {
     padding: 0;
 }
 
-#event .card {
+#event .card, .single-post .card {
     border: 1px solid #193456 !important;
     border-radius: 0 0 0.25em 0.25em;
 }
 
-#event .card .list-group li {
+#event .card .list-group li, .single-post .card .list-group li {
 
     border-radius:unset;
 }
@@ -366,7 +366,7 @@ textarea {
 #data-event {
     color: white;
     margin: 1em;
-    padding: 1.6em 1em;
+    padding: 4em 1em;
     border: 1px solid #193456 !important;
     background:#193456;
 }
@@ -397,6 +397,76 @@ textarea {
     clear: both;
     text-align: center;
     margin: .4em 0 1.5em 0;
+}
+
+/* single-post */
+.single-post article{
+    margin-top: 0 !important;
+}
+
+.single-post .card {
+    border: 1px solid #193456!important;
+}
+
+/* pagination */
+li.list-group-item{
+    border: none;
+}
+
+li.axcess-pagination .btn {
+    background: #e8444d !important;
+
+}
+
+li.axcess-pagination .btn:hover, li.axcess-pagination a:hover {
+    background: #FAFAFA !important;
+    color: #193456!important;
+
+}
+
+li.axcess-pagination a {
+    display: inline-block;
+    background: #e8444d !important;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: .4em;
+    color: white;
+}
+
+/*general pagination*/
+.general-pagination {
+  display: flex;
+    justify-content: center;
+ }
+
+.general-pagination h2 {
+    display: none;
+}
+
+.general-pagination a  {
+    display: inline-block;
+    border-radius: .4em;
+    padding: .5em;
+    background: #FAFAFA;
+    color: #193456;
+    -webkit-box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+    box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+}
+
+.general-pagination span {
+    display: inline-block;
+    border-radius: .4em;
+    padding: .5em;
+    background: #193456;
+    color: white;
+    -webkit-box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+    box-shadow: 14px 17px 32px -6px rgba(0,0,0,0.15);
+}
+
+.general-pagination a:hover {
+    background: #e8444d ;
+    text-decoration: none;
+    color:white;
 }
 
 

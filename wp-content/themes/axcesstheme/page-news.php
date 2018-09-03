@@ -88,9 +88,9 @@ if (is_front_page()) {
                     </div>
                     </div>
                 </section>
-                <div class="col-12 col-md-2 my-5">
+                <aside class="col-12 col-md-2">
                     <?php get_sidebar('main'); ?>
-                </div>
+                </aside>
             </div>
         </div>
 

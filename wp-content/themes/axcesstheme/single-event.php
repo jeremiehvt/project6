@@ -11,12 +11,12 @@ get_header(); ?>
     <div class="row">
 
         <?php if (is_single()) : while (have_posts()) : the_post(); ?>
-            <article class="col-12 col-md-9 mt-3" id="event">
+            <article class="col-12 col-md-9 mt-5" id="event">
                 <nav aria-label="breadcrumb" class="col-12 m-0 p-0">
                     <ol class="breadcrumb">
                         <li class="bwg-breadcrumb-item-active">
                             <a href="/">Accueil</a> /
-                            <?php the_category(' ');?> /
+                            <?php the_category(' / ');?> /
                             <a href=" <?php the_permalink(); ?>">
                                 <?php the_title();?></a>
                         </li>
@@ -34,20 +34,21 @@ get_header(); ?>
                                 <?= get_the_date(); ?>
                         </span>
                         </li>
-                        <li class="list-group-item"
-                        <span class="font-italic">
+                        <li class="list-group-item axcess-pagination">
+                        <span>
                             <?php previous_post_link('%link', 'précédent');?>
                         </span>
-                        <span class="float-right"><?php next_post_link('%link', 'suivant'); ?>
+                        <span class="float-right"><?php next_post_link('%link', 'suivant')
+                            ; ?>
                         </span>
                         </li>
                     </ul>
 
                 </div>
             </article>
-            <div class="col-12 col-md-2 mt-3 mb-5">
+            <aside class="col-12 col-md-2 mt-2">
                 <?php get_sidebar('main'); ?>
-            </div>
+            </aside>
         <?php endwhile ; endif; ?>
     </div>
 </div> <?php get_footer();

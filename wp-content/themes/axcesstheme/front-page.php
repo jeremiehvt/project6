@@ -56,9 +56,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <aside class="col-12 col-md-3">
                             <?php get_sidebar('main'); ?>
-                        </div>
+                        </aside>
                     </div>
                 </div>
 

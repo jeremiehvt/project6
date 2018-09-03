@@ -21,7 +21,7 @@
 					 ?>	
 				</ul>
 			</div>
-            <div class="col-3 py-5">
+            <div class="col-3 py-5 ml-5">
                 <ul class="list-unstyled">
                     <h6>contact</h6>
                     <li>Mairie de missiriac</li>
