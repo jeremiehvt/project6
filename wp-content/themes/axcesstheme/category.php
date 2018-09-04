@@ -75,7 +75,7 @@ get_header(); ?>
 
 
         </div>
-        <aside class="col-12 col-md-2">
+        <aside class="col-12 col-md-2 d-none d-sm-none">
             <?php get_sidebar('main'); ?>
         </aside>
     </div>

@@ -5,6 +5,7 @@
         <title><?php wp_title(); ?></title>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <?php wp_head(); ?>
     </head>
 
@@ -17,12 +18,14 @@
 			        </a>
 			    </div>
 			<?php endif; ?>
-    		<nav class="navbar navbar-expand-md navbar-light" id="nav-axcessh"
+    		<nav class="navbar navbar-expand-md navbar-dark" id="nav-axcessh"
                  role="navigation">
 			  <div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<span><i class="fas fa-bars"></i>
+
+</span>
 				</button>
 				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<?php $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -48,4 +51,11 @@
 				</div>
 			</nav>
     	</header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-2 mobile-main-sidebar">
+                    <?php get_sidebar('mobile'); ?>
+                </div>
+            </div>
+        </div>
     

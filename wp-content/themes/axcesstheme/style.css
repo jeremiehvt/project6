@@ -471,7 +471,7 @@ li.axcess-pagination a {
 
 
 /* sidebar */
-.main-sidebar aside {
+.main-sidebar aside, .mobile-sidebar aside {
     margin-top: 2em;
     padding-bottom: 1em;
     border-radius: 0 0 .2em .2em;
@@ -572,4 +572,21 @@ aside .a2a_kit {
 
 #footer p a{
     color: white;
+}
+
+/* menu icon*/
+.fas {
+    color: white;
+}
+
+@media (max-width: 576px) {
+    img.logo-axcessh {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: 50%;
+    }
+
+
 }

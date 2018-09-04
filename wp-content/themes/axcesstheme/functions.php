@@ -6,7 +6,6 @@
 *
 */
 function axcess_enqueue_scripts(){
-    
     wp_enqueue_style('bootstrap','//stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',[],'4.1.0');
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.2.1.slim.min.js', [], '3.2.1', true);
     wp_enqueue_script('bootstrap_jquery', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', [], '4.0.0', true);
@@ -131,5 +130,15 @@ function axcesstheme_widgets_init() {
                           'after_widget'  => '</aside></li>',
                           'before_title'  => '<h6 class="widgettitle my-3">',
                           'after_title'   => '</h6>',
+                      ) );
+
+    register_sidebar( array(
+                          'name' => __( 'Mobile Sidebar', 'axcesstheme' ),
+                          'id' => 'mobile',
+                          'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'axcesstheme' ),
+                          'before_widget' => '<li id="%1$s" class="widget %2$s"><aside class="widget_%1$s_aside">',
+                          'after_widget'  => '</aside></li>',
+                          'before_title'  => '<h5 class="widgettitle my-3">',
+                          'after_title'   => '</h5>',
                       ) );
 }
