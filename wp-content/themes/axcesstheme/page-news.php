@@ -53,7 +53,7 @@ if (is_front_page()) {
                                             </span>
                                             <span class="category-span badge
                                                 badge-light"><?php
-                                                the_category( ' ')
+                                                the_category( ' / ')
                                                 ?></span>
                                         </div>
                                         <h4 class="card-txt">

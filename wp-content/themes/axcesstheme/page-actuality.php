@@ -48,11 +48,11 @@ if (is_page()) {
                                         the_post_thumbnail_url('medium'); endif ?>"/>
                                     <div class="card-body">
                                         <div class="card-category">
-                                            <span class="label-category-span">categorie :
+                                            <span class="label-category-span">categorie(s) :
                                             </span>
                                             <span class="category-span badge
                                                 badge-light"><?php
-                                                the_category( ' ')
+                                                the_category( ' / ')
                                                 ?></span>
                                         </div>
                                         <h4 class="card-txt">

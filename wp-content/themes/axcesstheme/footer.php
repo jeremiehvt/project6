@@ -34,8 +34,7 @@
 
 		</div>
 	</div>
-    <p class="col-12" id="colofon">site réalisé par jeremiehavart | <a
-                href="mailto:jeremiehvt@gmail.com">jeremiehvt@gmail.com</a></p>
+    <p class="col-12" id="colofon"><a href="http://axcesshandisports.fr">axcesshandisports ©</a></p>
 </div>
 
 <?php

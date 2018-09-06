@@ -6,9 +6,7 @@ get_header(); ?>
        <nav aria-label="breadcrumb" class="col-12 col-md-9 mt-md-4">
            <ol class="breadcrumb">
                <li class="bwg-breadcrumb-item-active">
-                   <a href="/">Accueil</a> / <?= get_category_parents(get_the_ID(),true, ' ')
-                       ; ?> /
-                   <?php the_category(' ');?> /
+                   <a href="/">Accueil</a> / <?= the_category(' / ')?> /
                    <a href=" <?php the_permalink(); ?>">
                        <?php the_title();?></a>
                </li>

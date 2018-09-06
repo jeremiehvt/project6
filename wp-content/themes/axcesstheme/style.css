@@ -205,6 +205,10 @@ ul.list-group li {
     color: white;
 }
 
+.card img {
+    width: 100% !important;
+}
+
 /* current page */
 .current-page {
     background: #FAFAFA;

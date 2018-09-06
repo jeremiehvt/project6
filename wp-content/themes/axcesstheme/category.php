@@ -15,9 +15,7 @@ get_header(); ?>
                     <nav aria-label="breadcrumb" class="col-12">
                         <ol class="breadcrumb">
                             <li class="bwg-breadcrumb-item-active">
-                                <a href="/">Accueil</a> /
-                                <?php the_category(' ');
-                                ?>
+
                             </li>
                         </ol>
                         <div class="category-description">
@@ -32,11 +30,11 @@ get_header(); ?>
                                     the_post_thumbnail_url('medium'); endif ?>"/>
                                 <div class="card-body">
                                     <div class="card-category">
-                                            <span class="label-category-span">categorie :
+                                            <span class="label-category-span">categorie(s) :
                                             </span>
                                         <span class="category-span badge
                                                 badge-light"><?php
-                                            the_category( ' ')
+                                            the_category( ' / ')
                                             ?></span>
                                     </div>
                                     <h4 class="card-txt">
@@ -75,7 +73,7 @@ get_header(); ?>
 
 
         </div>
-        <aside class="col-12 col-md-2 d-none d-sm-none">
+        <aside class="col-12 col-md-2">
             <?php get_sidebar('main'); ?>
         </aside>
     </div>
