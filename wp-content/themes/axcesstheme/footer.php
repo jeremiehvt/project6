@@ -3,7 +3,7 @@
 <div class="jumbotron jumbotron-fluid" id="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-3 py-5">
+			<div class="col-12 col-md-3 py-5">
 				<ul class="list-unstyled">
                     <h6>administration</h6>
 					<?php 
@@ -21,7 +21,7 @@
 					 ?>	
 				</ul>
 			</div>
-            <div class="col-3 py-5 ml-5">
+            <div class="col-12 col-md-3 py-5 ml-md-5">
                 <ul class="list-unstyled">
                     <h6>contact</h6>
                     <li>Mairie de missiriac</li>

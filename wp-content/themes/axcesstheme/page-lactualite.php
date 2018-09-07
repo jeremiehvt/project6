@@ -80,10 +80,11 @@ if (is_page()) {
                                     </ul>
                                 </div>
                             </article>
+                             
 
                         <?php endforeach;
                         wp_reset_postdata();
-                        ?>
+                        ?> 
                     </div>
                 </section>
                 <div class="col-12 col-md-2 my-5 d-none d-sm-none d-md-block">

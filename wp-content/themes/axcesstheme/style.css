@@ -592,5 +592,14 @@ aside .a2a_kit {
         width: 50%;
     }
 
+    .current-page  h3, .current-page  h2, .current-page  h1, .current-page  h4, .current-page  h5, .current-page  h6 {
+   
+    font-size: 1.5rem;
+    }
+
+    .page-content h1 ,.page-content h2 ,.page-content h3 ,.page-content h4 ,.page-content h5 ,.page-content h6 {
+    font-size: 1.5em;
+    }
+
 
 }

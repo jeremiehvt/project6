@@ -25,7 +25,7 @@ if (is_front_page()) {
                         <?php the_content();?>
                     </div>
 
-                    <h2 id="homepage-actuality-title"> <?= get_page_by_title('l\'actualité')
+                    <h2 id="homepage-actuality-title"> <?= get_page_by_title('actualités')
                             ->post_title; ?></h2>
                     <div class="actuality">
                     <div class="row">
@@ -49,7 +49,7 @@ if (is_front_page()) {
                                         the_post_thumbnail_url('medium'); endif ?>"/>
                                     <div class="card-body">
                                         <div class="card-category">
-                                            <span class="label-category-span">categorie(s) :
+                                            <span class="label-category-span">categorie :
                                             </span>
                                             <span class="category-span badge
                                                 badge-light"><?php

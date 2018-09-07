@@ -9,22 +9,27 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'acxesstheme' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'acxesstheme' ); ?></p>
-
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
+<div class="container-fluid">
+            <div class="row">
+                <section class="col-12 col-md-8 offset-md-1 my-3">
+                    <nav aria-label="breadcrumb" class="mt-2">
+                        <ol class="breadcrumb">
+                            <li class="bwg-breadcrumb-item-active">
+                               
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="jumbotron page-content">
+                      <h1 id="homepage-actuality-title"> 
+                      	<?php _e( 'Ressource non trouvée.', 'acxesstheme' ); ?>
+                      </h1>
+                      <p>
+                      	<a href="/"> <?php _e( 'Retour page d\'accueil >', 'acxesstheme' ); ?></a>
+                      </p>
+                </section>
+                <aside class="col-12 col-md-2">
+                    <?php get_sidebar('main'); ?>
+                </aside>
+            </div>
+        </div>
 <?php get_footer(); ?>
